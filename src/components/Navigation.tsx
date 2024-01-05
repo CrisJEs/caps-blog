@@ -8,3 +8,5 @@ const Navigation = () => {
     <a href="/tags/">Tags</a>
   </div>;
 };
+
+export default Navigation;
