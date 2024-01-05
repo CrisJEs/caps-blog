@@ -4,10 +4,28 @@ import Navigation from "./Navigation.astro";
 import ThemeIcon from "./ThemeIcon.astro";
 ---
 
+<style>
+  header {
+    background-color: white;
+    width: 100%;
+    padding: 1rem;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  html.dark header {
+    background-color: black;
+  }
+</style>
+
 <header>
   <nav>
     <Hamburger />
-    <ThemeIcon />
-    <Navigation />
+    <div class="container">
+      <Navigation />
+      <ThemeIcon />
+    </div>
   </nav>
 </header>
