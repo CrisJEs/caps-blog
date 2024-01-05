@@ -1,12 +1,17 @@
 import React from "react";
-const MiPaginaReact = () => {
+import Hamburguer from "./Hambuguer";
+
+const Header = () => {
   return (
     <header>
       <nav>
-        <Hamburger />
+        <Hamburguer />
+        {/* <Hamburger />
         <ThemeIcon />
-        <Navigation />
+        <Navigation /> */}
       </nav>
     </header>
   );
 };
+
+export default Header;
