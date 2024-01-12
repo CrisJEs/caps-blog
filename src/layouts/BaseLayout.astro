@@ -15,8 +15,10 @@ const { pageTitle } = Astro.props;
   </head>
   <body>
     <Header />
-    <h1>{pageTitle}</h1>
-    <slot />
+    <div style={{ marginLeft: "25%", marginRight: "25%" }}>
+      <h1>{pageTitle}</h1>
+      <slot />
+    </div>
     <Footer />
     <script>
       import "../scripts/menu.js";
